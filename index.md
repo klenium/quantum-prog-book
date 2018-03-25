@@ -1,4 +1,4 @@
-# Történelem.
+# Történelem
 > Mik a programok, mióta használjuk őket, milyen fejlődéseken mentek keresztül, hogy indult a kvantum programnyelvek útja.
 
 # Eltérések a klasszikus és kvantum programok között
@@ -15,8 +15,10 @@
 
 # A QCL nyelv
 > https://github.com/aviggiano/qcl
+
 > https://en.wikipedia.org/wiki/Quantum_computation_language
 
 # A Q# nyelv
 > https://github.com/Microsoft/Quantum
+
 > https://en.wikipedia.org/wiki/Q_Sharp
