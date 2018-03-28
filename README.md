@@ -24,7 +24,7 @@ A kvantum-programokat számításigényes feladatoknál éri meg használni. Ily
 Napjainkban sok programozási nyelvet és platformot szokás úgy tervezni, hogy az hardverfüggetlen legyen. Így ugyanis a fejlesztőknek nem kell időt fordítaniuk arra, hogy ugyan azt a szoftvert több, eltérű tulajdonságú hardveren is futtathatóvá tegyék, ezzel jelentős költéset spórolnak meg, illetve a szélesebb felhasználhatóság miatt több bevételre tehetnek szert. Kérdéses, ennek a törekvésnek mennyire lesz létjogosultsága a klasszikus, és kvantum számítógépek között. A cégeknek költséges lehet mindkét technolgóiával együtt fejleszteni, ráadásul nem sok értelme lenne ugyan azt a szoftvert futtatni egy elég lassú, és egy villámgyors gépen. A programozási nyelvek fejlesztői vélhetően megpróbálnak majd újításokat bevezetni termékükbe, így ugyanis a már megszokott környezetben lehet fejleszteni egy másféle technológiához is. Példa erre a JavaEE, ami lényegesen eltér az asztali programok működési elvétől, mégis, a Java nyelv szintaxisát és könyvtárait egységesen tudjuk felhasználni.
 
 # Fordítás, futtatás
-> Ez a fejezet így nem túl jó, mivel pszeudokód és képgenerálóról is van szó, ott meg nincs értelme a futtatásnak. A probléma a program =/= programozás keveredésből adódhat. Át kell kissé fogalmazni.
+> Ez a fejezet így nem túl jó, mivel pszeudokód és képgenerálóról is van szó, ott meg nincs értelme a futtatásnak. A probléma a program és programozási nyelv keveredésből adódhat. Át kell kissé fogalmazni.
 >
 > Mi tudja futtatni a kvantum-programot, milyen formátumba kell lefordítani, architektúrák, szimulációk
 
