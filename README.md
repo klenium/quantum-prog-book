@@ -19,6 +19,8 @@ A kvantum-számítógépek megjelenésével nem érdemes eltemetni az elektronik
 
 A kvantum-programokat számításigényes feladatoknál éri meg használni. Ilyen pl. a mesterséges intelligencia, biztonsági számítások, természettudományos szimulációk, óriási adatmennyiség elemzése, stb. Nem megpelő, hogy a jelenleg elérhető kvantum példaprogramok közül sok ilyen eseteket ír le.
 
+< Ez a rész nem ebbe a fejezetbe illik. Talán a fordításhoz?
+
 Napjainkban sok programozási nyelvet és platformot szokás úgy tervezni, hogy az hardverfüggetlen legyen. Így ugyanis a fejlesztőknek nem kell időt fordítaniuk arra, hogy ugyan azt a szoftvert több, eltérű tulajdonságú hardveren is futtathatóvá tegyék, ezzel jelentős költéset spórolnak meg, illetve a szélesebb felhasználhatóság miatt több bevételre tehetnek szert. Kérdéses, ennek a törekvésnek mennyire lesz létjogosultsága a klasszikus, és kvantum számítógépek között. A cégeknek költséges lehet mindkét technolgóiával együtt fejleszteni, ráadásul nem sok értelme lenne ugyan azt a szoftvert futtatni egy elég lassú, és egy villámgyors gépen. A programozási nyelvek fejlesztői vélhetően megpróbálnak majd újításokat bevezetni termékükbe, így ugyanis a már megszokott környezetben lehet fejleszteni egy másféle technológiához is. Példa erre a JavaEE, ami lényegesen eltér az asztali programok működési elvétől, mégis, a Java nyelv szintaxisát és könyvtárait egységesen tudjuk felhasználni.
 
 # Fordítás, futtatás
@@ -28,13 +30,9 @@ Klasszikus számítógépek esetében a programnyelveketben megírt műveketeket
 
 Problémát jelent ugyanakkor, hogy még nem nagyon tudjuk, milyen lesz a kvantum-számítógépek interfésze, azaz, hogy hogyan lehet hozzáférni kívülről. Jelenleg 1-2 gyártó rendelkezik kísérleti kvantum-számítógéppel. Mint az várható minden felfedezés esetében, ebben a fázisban nem a kényelmes használatra koncentrálnak, hanem a működés elérésére. Így volt ez a klasszikus számítógépek esetében is: kezdetben minimális utasításkészletet támogattak a processzorok, de új igények jelentek meg, így kevésnek bizonyultak. Ma már számtalan utasításkészlet érhető el, ám kompatibilitási okok miatt az x86 architektúra mégis elterjedt maradt, a teljesítmény rovására. Remélhetőleg, a kvantum számítógép- és programnyelv tervezők tanulni fognak ebből az esetből, számolnak azzal, hogy a kísérletek után sok változásra kell felkészülniük.
 
-A jelenlegi kvantum-programokat lehetséges klasszikus számítógépeken futtatni, szimulációval. Többnyire a mostani kvantum-programokat ilyen módon tudjuk csak kipróbálni. Fordítás alatt ezért sokszor egy másik programnyelvre vagy programra történi átalakítást, futtatás alatt a szimulációt értjük. Ezek természetesen sokkal lassabbak, mintha valós kvantum-számítógépeken futnának, sőt, a kvantum-algoritmusok emukációja még a klasszikus megfelelőjüknél is lassabb lehet. Azonban így lehetőségünk nyílik a szemmel észre nem vett hibák megkeresésére is, azon ugyanis a programok futtatásából kiderülnek - már ha sikerül megfelelő teszteket írnunk.
+A jelenlegi kvantum-programokat lehetséges klasszikus számítógépeken futtatni, szimulációval. Többnyire a mostani kvantum-programokat ilyen módon tudjuk csak kipróbálni. Fordítás alatt ezért sokszor egy másik programnyelvre vagy programra történi átalakítást, futtatás alatt a szimulációt értjük. Ezek természetesen sokkal lassabbak, mintha valós kvantum-számítógépeken futnának, sőt, a kvantum-algoritmusok szimukációja még a klasszikus megfelelőjüknél is lassabb lehet. Azonban így lehetőségünk nyílik a szemmel észre nem vett hibák megkeresésére is, azon ugyanis a programok futtatásából kiderülnek - már ha sikerül megfelelő teszteket írnunk.
 
 > Hogyan lehet a lenti nyelveket lefordítani és futtatni.
-
-# Kvantum programnyelvek csoportosítása
-> Mennyire absztrakt, objektumorientált, funkcionális, párhuzamosság.
-
 
 
 # A QCL nyelv
