@@ -34,16 +34,26 @@ A jelenlegi kvantum-programokat lehetséges klasszikus számítógépeken futtat
 
 > Hogyan lehet a lenti nyelveket lefordítani és futtatni.
 
+# Kvantum pszeudokód
+> Egyszerű algoritmus leírásra használható nyelv, nem foglalkozik a fordítás részével.
+>
+> https://pdfs.semanticscholar.org/60d1/e63ca31555ec7013c5eb9a8a63788398fd14.pdf
 
 # A QCL nyelv
+> Elsők között lett létrehozva, C-re hasonlító "mindent tudó" kvantum-nyelv.
+>
 > https://github.com/aviggiano/qcl
-
+>
 > https://en.wikipedia.org/wiki/Quantum_computation_language
 
-# A Q# nyelv
-> https://github.com/Microsoft/Quantum
-
-> https://en.wikipedia.org/wiki/Q_Sharp
-
 # A Quipper nyelv
+> Könnyen generálhatóak vele vizuális kvantum-áramkörök.
+>
 > https://www.mathstat.dal.ca/~selinger/quipper/
+
+# A Q# nyelv
+> Nemrég jött ki, MS csinálja, hasonlít a C#-ra, szimulátor.
+>
+> https://github.com/Microsoft/Quantum
+>
+> https://en.wikipedia.org/wiki/Q_Sharp
