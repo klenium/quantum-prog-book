@@ -20,29 +20,32 @@ Többnyire a kényelmes, emberek által jól értelmezhető programnyelveketben 
 
 Ha a kvantumszámítógép elérhető lesz, a kvantum programnyelvek nagy lendületet fognak kapni. Új fejlesztőkörnyezeteket hoznak létre, vagy ha lehetséges, beépítik a már meglévő rendszerekbe a kvantum programok készítéséhez szükséges eszközöket. Várhatóan lesznek próbálkozások arra, hogy egyes programnyelveket kiterjesszék a kvantum programok világára is, hogy a fejlesztők egységes nyelven tudjanak fejleszteni a kettő között, ne kelljen külön megtanulni a sok dologban hasonlító eljárásokat. A jelenlegi szimulátorokat leváltják majd a valós fordítóprogramok.
 
-# Eltérések a klasszikus és kvantum programok között
+# Kvantumprogramok felépítése
+## Eltérések a klasszikus és kvantum műveletei programok között
 > Speciális kapuk használata, qbitek elérése, mérési pontatlanság, párhuzamosság, több adat egyben kezelve.
 
+## Kvantumprogramok kimenetei
+> Mire lehet lefordítani, hogyan lehet megjeleníteni, mit ír le (szoftver vagy hadver).
 
-
-# Kvantum pszeudokód
+# Kvantum programozási nyelvek
+## Kvantum pszeudokód
 > Egyszerű algoritmus leírásra használható nyelv, nem foglalkozik a fordítás részével.
 >
 > https://pdfs.semanticscholar.org/60d1/e63ca31555ec7013c5eb9a8a63788398fd14.pdf
 
-# A QCL nyelv
+## A QCL nyelv
 > Elsők között lett létrehozva, C-re hasonlító "mindent tudó" kvantum-nyelv.
 >
 > https://github.com/aviggiano/qcl
 >
 > https://en.wikipedia.org/wiki/Quantum_computation_language
 
-# A Quipper nyelv
+## A Quipper nyelv
 > Könnyen generálhatóak vele vizuális kvantum-áramkörök.
 >
 > https://www.mathstat.dal.ca/~selinger/quipper/
 
-# A Q# nyelv
+## A Q# nyelv
 > Nemrég jött ki, MS csinálja, hasonlít a C#-ra, szimulátor.
 >
 > https://github.com/Microsoft/Quantum
