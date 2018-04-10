@@ -1,6 +1,5 @@
 # Bevezetés
 ## A programok rövid története
-> Mik a programok, mióta használjuk őket, milyen fejlődéseken mentek keresztül, hogy indult a kvantum programnyelvek útja.
 
 A szoftverfejlesztés viszonylag új szakterület. A programozás ágazat kezdete megközelítőleg az 1950-es évekre rakható. Az ipari forradalmaknak köszönhetően ekkorra már fejlett gépek, elektronikus technológiák álltak a szakemberek rendelkezésére a számítógépek megépítéséhez, kezdődhetett a programnyelvek, szoftver terveési folyamatok célzott, irányított létrehozása. A programozás bő fél évszázados múltja alatt ezek drasztikusan átalakultak, a hatékonyságok és komplexitásuk sokszorosára fejlődött, a folyamatok kiszámíthatóbbak, gördülékenyebbek lettek. Kezdetben csak 1-1 művelet sikeres, automatizált végrehajtása volt a cél, napjainkban azonban számos más dolog is fontos. Voltak programnyelvek, amik hibásan lettek megtervezve, használatuk túl bonyolult volt emberek számára, nehéz volt leírni bennük komplex rendszereket, feladatokat, nem alkalmazkodtak a fejlesztendő program struktúrájához. Ezekből sokat tanultunk, a tapasztalataink alapján újabb és újabb rendszereket fejlesztettünk ki. Manapság már óriási szoftvereket építünk, bonyolult algoritmusokat hozunk létre, számtalan mérnök foglalkozik egyszerre a feladattal, az elkészült programoktól pedig emberéletek függhetnek. Egyre rövidebb idő alatt, egyre nehezebb programot, egyre kevesebb pénzből kell fejlesztenünk, alkalmazkodva a kor elvárásának.
 
@@ -22,22 +21,20 @@ Ha a kvantumszámítógép elérhető lesz, a kvantum programnyelvek nagy lendü
 
 # Kvantumprogramok felépítése
 
-_Megjegyzés:_ A programok leírását, értelmezését lehetővé tevő nyelveket típusuk szerint különféle kategóriákba soroljuk, és emiatt eltérően is hívjuk őket (pl. a [HTML][1] jelölő, a [Java][2] programozási, a [VHDL][3] hardverleró nyelv, az [x86][4] pedig egy utasításkészlet), noha programokkal kapcsolatos területen használjuk fel őket. A továbbiakban a "kvantum programozási nyelv" főleg csak a kvantumszámítógépekkel kapcsolatba hozható jellemzésre használt, nem pedig a nyelv céljának, típusának meghatározására.
+_Megjegyzés:_ A programok leírását, értelmezését lehetővé tevő nyelveket típusuk szerint különféle kategóriákba soroljuk, és emiatt eltérően is hívjuk őket (pl. a [HTML][1] jelölő, a [Java][2] programozási, a [VHDL][3] hardverleró nyelv, az [x86][4] pedig egy utasításkészlet), noha programokkal kapcsolatos területen használjuk fel őket. A továbbiakban a "kvantum programozási nyelv" főleg csak a kvantumszámítógépekkel és programokkal kapcsolatba hozható jellemzésre használt, nem pedig a nyelv céljának, típusának meghatározására.
 
 ## Eltérések a klasszikus és kvantum műveletei programok között
 > Speciális kapuk használata, qbitek elérése, mérési pontatlanság, párhuzamosság, több adat egyben kezelve.
 
-## Kvantumprogramok kimenetei
-> Mire lehet lefordítani, hogyan lehet megjeleníteni, mit ír le (szoftver vagy hadver).
+## Kvantum programozási nyelvek csoportosítása
 
-Mivel a kvantumszámítógép még nem érhető el, a jelenlegi kvantum programozási nyelveket nem futtatható állományokra fordítják le. Egy részük csak szemléltetésre használt, másik részük szimulációkra, néhány pedig a jövőbeli műveleteket igyekszik már most megoldható formába hozni.
-
-A kimenetek alapján csoportosíthatjuk a programnyelveket:
+Bár még jóval kevesebb nyelvet készítettem a kvantum programokhoz, mint a klasszikus programokhoz, már most is elég sok kategóriát lefednek az elérhető nyelvek, így különféle területeken, különféle feladathoz lehet őket felhasználni:
 
 - Lehetnek alacsony, vagy magas szintűek. Többnyire egy alacsony szintű nyelv szorosan kötődik a számítógéphez, vagy annak interfészéhez/utasításkészletéhez, a leírás elemi műveleteket tartalmaz, amit a számítógép akár közvetlenül is tudna értelmezni. Alacsony szintű leírásra alkalmas a [QASM][5], és a [Quil][6] nyelv.
 - Egy részük hardverleíró nyelv. Ezek a nyelvek azt fogalmazzák meg, milyen alkatrészekből lehet felépíteni a hálózatot, hogyan kapcsolódnak egymáshoz az eszközök. A nyelv elemeinek konkrét fizikai jelentésük van. Ilyen pl. a QASM.
 - A nyelv feldolgozásának eredménye alapján lehet szimulációs (mint pl. a [Q#][7] vagy [libquantum][9] esetében), gráfmodellt vagy hálózatképet megjelenítő (pl. [Quipper][8], vagy csak simán emberek számára tájékoztató, pszeudokód-szerű.
 - A nyelv belső felépítése szerint lehet egyszerű műveleteket leíró, kevés absztrakciót használó, mint a [QCL][10], vagy pl. objektum-orientált (többé-kevésbé erre törekszik a Q# nyelv).
+- Mintájuk alapján lehetnek pl. funkcionálisak vagy szekvenciálisak, kombináltak, stb.
 - Épülhetnek korábban már elkészített nyelvekre (pl. a Quipper egy kiegészítése a [Haskell][11] nyelvnek, a [kvantum pszeudokód][12] kiegészítése a hagyományos pszeudokódnak), vagy lehetnek teljesen újonnan felépítettek.
 
 # Kvantum programozási nyelvek
