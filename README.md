@@ -21,33 +21,53 @@ Többnyire a kényelmes, emberek által jól értelmezhető programnyelveketben 
 Ha a kvantumszámítógép elérhető lesz, a kvantum programnyelvek nagy lendületet fognak kapni. Új fejlesztőkörnyezeteket hoznak létre, vagy ha lehetséges, beépítik a már meglévő rendszerekbe a kvantum programok készítéséhez szükséges eszközöket. Várhatóan lesznek próbálkozások arra, hogy egyes programnyelveket kiterjesszék a kvantum programok világára is, hogy a fejlesztők egységes nyelven tudjanak fejleszteni a kettő között, ne kelljen külön megtanulni a sok dologban hasonlító eljárásokat. A jelenlegi szimulátorokat leváltják majd a valós fordítóprogramok.
 
 # Kvantumprogramok felépítése
+
+_Megjegyzés:_ A programok leírását, értelmezését lehetővé tevő nyelveket típusuk szerint különféle kategóriákba soroljuk, és emiatt eltérően is hívjuk őket (pl. a [HTML][1] jelölő, a [Java][2] programozási, a [VHDL][3] hardverleró nyelv, az [x86][4] pedig egy utasításkészlet), noha programokkal kapcsolatos területen használjuk fel őket. A továbbiakban a "kvantum programozási nyelv" főleg csak a kvantumszámítógépekkel kapcsolatba hozható jellemzésre használt, nem pedig a nyelv céljának, típusának meghatározására.
+
 ## Eltérések a klasszikus és kvantum műveletei programok között
 > Speciális kapuk használata, qbitek elérése, mérési pontatlanság, párhuzamosság, több adat egyben kezelve.
 
 ## Kvantumprogramok kimenetei
 > Mire lehet lefordítani, hogyan lehet megjeleníteni, mit ír le (szoftver vagy hadver).
 
+Mivel a kvantumszámítógép még nem érhető el, a jelenlegi kvantum programozási nyelveket nem futtatható állományokra fordítják le. Egy részük csak szemléltetésre használt, másik részük szimulációkra, néhány pedig a jövőbeli műveleteket igyekszik már most megoldható formába hozni.
+
+A kimenetek alapján csoportosíthatjuk a programnyelveket:
+
+- Lehetnek alacsony, vagy magas szintűek. Többnyire egy alacsony szintű nyelv szorosan kötődik a számítógéphez, vagy annak interfészéhez/utasításkészletéhez, a leírás elemi műveleteket tartalmaz, amit a számítógép akár közvetlenül is tudna értelmezni. Alacsony szintű leírásra alkalmas a [QASM][5], és a [Quil][6] nyelv.
+- Egy részük hardverleíró nyelv. Ezek a nyelvek azt fogalmazzák meg, milyen alkatrészekből lehet felépíteni a hálózatot, hogyan kapcsolódnak egymáshoz az eszközök. A nyelv elemeinek konkrét fizikai jelentésük van. Ilyen pl. a QASM.
+- A nyelv feldolgozásának eredménye alapján lehet szimulációs (mint pl. a [Q#][7] vagy [libquantum][9] esetében), gráfmodellt vagy hálózatképet megjelenítő (pl. [Quipper][8], vagy csak simán emberek számára tájékoztató, pszeudokód-szerű.
+- A nyelv belső felépítése szerint lehet egyszerű műveleteket leíró, kevés absztrakciót használó, mint a [QCL][10], vagy pl. objektum-orientált (többé-kevésbé erre törekszik a Q# nyelv).
+- Épülhetnek korábban már elkészített nyelvekre (pl. a Quipper egy kiegészítése a [Haskell][11] nyelvnek, a [kvantum pszeudokód][12] kiegészítése a hagyományos pszeudokódnak), vagy lehetnek teljesen újonnan felépítettek.
+
 # Kvantum programozási nyelvek
 ## Kvantum pszeudokód
 > Egyszerű algoritmus leírásra használható nyelv, nem foglalkozik a fordítás részével.
->
-> https://pdfs.semanticscholar.org/60d1/e63ca31555ec7013c5eb9a8a63788398fd14.pdf
+
 
 ## A QCL nyelv
 > Elsők között lett létrehozva, C-re hasonlító "mindent tudó" kvantum-nyelv.
->
-> https://github.com/aviggiano/qcl
->
-> https://en.wikipedia.org/wiki/Quantum_computation_language
+
 
 ## A Quipper nyelv
 > Könnyen generálhatóak vele vizuális kvantum-áramkörök.
->
-> https://www.mathstat.dal.ca/~selinger/quipper/
+
 
 ## A Q# nyelv
 > Nemrég jött ki, MS csinálja, hasonlít a C#-ra, szimulátor.
->
-> https://github.com/Microsoft/Quantum
->
-> https://en.wikipedia.org/wiki/Q_Sharp
+
+
+
+
+[1]: https://www.w3.org/TR/html5/
+[2]: https://docs.oracle.com/javase/specs/
+[3]: https://ieeexplore.ieee.org/document/4772740/
+[4]: https://software.intel.com/en-us/articles/intel-sdm
+[5]: https://arxiv.org/abs/1707.03429
+[6]: https://arxiv.org/abs/1608.03355
+[7]: https://docs.microsoft.com/en-us/quantum/index?view=qsharp-preview
+[8]: https://www.mathstat.dal.ca/~selinger/quipper/
+[9]: http://www.libquantum.de/
+[10]: http://tph.tuwien.ac.at/~oemer/qcl.html
+[11]: https://www.haskell.org/
+[12]: https://pdfs.semanticscholar.org/60d1/e63ca31555ec7013c5eb9a8a63788398fd14.pdf
