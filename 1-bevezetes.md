@@ -38,20 +38,6 @@ Bár még jóval kevesebb nyelvet készítettem a kvantum programokhoz, mint a k
 - Épülhetnek korábban már elkészített nyelvekre (pl. a Quipper egy kiegészítése a [Haskell][11] nyelvnek, a [kvantum pszeudokód][12] kiegészítése a hagyományos pszeudokódnak), vagy lehetnek teljesen újonnan felépítettek.
 
 # Kvantum programozási nyelvek
-## Kvantum pszeudokód
-> Egyszerű algoritmus leírásra használható nyelv, nem foglalkozik a fordítás részével.
-
-
-## A QCL nyelv
-> Elsők között lett létrehozva, C-re hasonlító "mindent tudó" kvantum-nyelv.
-
-
-## A Quipper nyelv
-> Könnyen generálhatóak vele vizuális kvantum-áramkörök.
-
-
-## A Q# nyelv
-> Nemrég jött ki, MS csinálja, hasonlít a C#-ra, szimulátor.
 
 
 
