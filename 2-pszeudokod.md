@@ -15,4 +15,9 @@ A kvantum pszeudokódra is készült egy egységes ajánlás. E. Knill készíte
 4. Eljárások megfordítása: A kvantum pszeudokód egyszerű szintaktikát kínál arra a gyakran használt módszerre, amikor algoritmusokat fordítva hajtunk végre. Normál esetben az unitáris operátorokat invertálnunk kell, és fordított sorrendben végrehajtani őket, azonban a kvantum pszeudokódban elegendő csak a művelet elé írni a `reverse` kulcsszót.
 5. Kvantumregiszterek mérés nélkül átalakítása: Bizonyos esetekben a kvantumregiszter bizonyíthatóan klasszikus állapotba kerül a műveletek után. Ebben az esetben használhatjuk a kvantumregisztert klasszikus regiszterként, anélkül, hogy a nem megfordítható mérést el kellene végeznünk rajta. Erre való az `isClassical` kulcsszó.
 6. Kvantumregiszterek eldobása: Előfordulhat, hogy egy kvantumregiszterre már nincs szükségünk a továbbiakban. Ahhoz, hogy a kvantumregiszter ne befolyásolja a későbbi műveleteket, jelezzük a `after dissipating` kifejezéssel, hogy a kvantumregisztert eldobtuk, alaphelyzetbe állítottuk.
-7. Elágazások: Bár a programba valódi elágazást csak akkor tudunk tenni, ha ismerjük (megmérjük) a regiszterek tartalmát, hogy össze tudjuk hasonlítani az értékeket, bizonyos unitáris operátorok játszhatnak olyan szerepet, mint a klasszikus elágazások. A kvantum pszeudokód erre kínál szintaktikai lehetőséget: `<u>if a then U(a)</u>`. Ez a kifejezés átalakítható lenne a neki megfelelő (de lehet kevésbé beszédesebb) unitáris operátorrá.
+7. Elágazások és ciklusok: Bár a programba valódi elágazást és ciklust csak akkor tudunk tenni, ha ismerjük (megmérjük) a regiszterek tartalmát, hogy össze tudjuk hasonlítani az értékeket, bizonyos unitáris operátorok játszhatnak olyan szerepet, mint a klasszikus elágazások, illetve az operátorok többszöri ismétlésével kaphatunk egy ciklust. A kvantum pszeudokód erre kínál szintaktikai lehetőséget: <u>`if a then U(a)`</u>, `for i=A to i=B`. Ezek a kifejezések átalakíthatók lennének a neki megfelelő (de lehet kevésbé beszédesebb) unitáris operátorokká.
+
+#### A Deutsch–Jozsa algoritmus leírása kvantum pszeudokóddal
+```
+
+```
