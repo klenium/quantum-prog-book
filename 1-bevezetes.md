@@ -58,15 +58,15 @@ public class Main {
         IntUnaryOperator function;
         int constantValue = new Random().nextInt(2);
         if (args[0].equals("constant"))
-			function = (x) -> constantValue;
+            function = (x) -> constantValue;
         else
-			function = (x) -> (x + constantValue) % 2;
+            function = (x) -> (x + constantValue) % 2;
 
         int n = Integer.parseInt(args[1]);
         int result = 0;
         for (int i = 0; i < n/2+1; ++i)
             result += function.applyAsInt(i);
-		
+        
         String type = ((result == 0 || result == n/2+1) ? "constant" : "balanced");
         System.out.println("Function is " + type + ".");
     }
