@@ -25,17 +25,17 @@ Output: Klasszikus igaz, ha f konstans, illetve hamis, ha kiegegysúlyozott.
 
 
 <ins>control</ins> <- Initialize (0, n)
-    **C:** A kvantumregiszterbe betöltünk n darab 0 fázisú qbitet.
+    <strong>C:</strong> A kvantumregiszterbe betöltünk n darab 0 fázisú qbitet.
 <ins>data</ins> <- Initialize (1)
 <ins>state0</ins> <- Merge (<ins>control</ins>, <ins>data</ins>)
-    **C:** A state0 a két qregiszer összevont állapotát jelzi.
+    <strong>C:</strong> A state0 a két qregiszer összevont állapotát jelzi.
 <ins>state1</ins> <- Hadamard <sup>⊗n+1</sup> (<ins>state0</ins>)
-    **C:** Mindegyik qbiten alkalmazunk egy Hadamard kaput.
+    <strong>C:</strong> Mindegyik qbiten alkalmazunk egy Hadamard kaput.
 <ins>state2</ins> <- U-Controlled-CNOT (f, <ins>control</ins>, <ins>data</ins>)
-    **C:** Az U-Controlled-CNOT egy olyan kaput jelöl, ami a CNOT kapuhoz hasonlóan működik, de a data ágon y ⊕ f(x) lesz a hatása.
+    <strong>C:</strong> Az U-Controlled-CNOT egy olyan kaput jelöl, ami a CNOT kapuhoz hasonlóan működik, de a data ágon y ⊕ f(x) lesz a hatása.
 <ins>state3</ins> <- Hadamard <sup>⊗n</sup> (<ins>state2</ins>)
 value <- <ins>state3</ins>
-    **C:** Megmérjük a qregisztert, eredményül klasszikus állapotot kapunk.
+    <strong>C:</strong> Megmérjük a qregisztert, eredményül klasszikus állapotot kapunk.
 if value is -1 or 1 then result <- true else result <- false
 </pre>
 
