@@ -24,7 +24,7 @@ Input: f egy konstans vagy kiegyensúlyozott függvény, n pedig az f függvény
 
 Output: Klasszikus igaz, ha f konstans, illetve hamis, ha kiegegysúlyozott.
 
-
+-----
 
 <ins>control</ins> <- Initialize(0, n)
 
