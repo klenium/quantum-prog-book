@@ -19,36 +19,23 @@ A kvantum pszeudokódra is készült egy egységes ajánlás. E. Knill készíte
 
 #### A Deutsch–Jozsa algoritmus leírása kvantum pszeudokóddal
 <pre>
-DeutschJozsa(n, f)
-
+DeutschJozsa (n, f)
 Input: f egy konstans vagy kiegyensúlyozott függvény, n pedig az f függvény bemeneti kvantumregiszerének dimenziója (a qbit-ek száma).
-
 Output: Klasszikus igaz, ha f konstans, illetve hamis, ha kiegegysúlyozott.
 
------
 
-<ins>control</ins> <- Initialize(0, n)
-
-**C:** A kvantumregiszterbe betöltünk n darab 0 fázisú qbitet.
-
-<ins>data</ins> <- Initialize(1)
-
-<ins>state0</ins> <- Merge(<ins>control</ins>, <ins>data</ins>)
-
-**C:** A state0 a két qregiszer összekapcsolt állapotát jelzi.
-
+<ins>control</ins> <- Initialize (0, n)
+    **C:** A kvantumregiszterbe betöltünk n darab 0 fázisú qbitet.
+<ins>data</ins> <- Initialize (1)
+<ins>state0</ins> <- Merge (<ins>control</ins>, <ins>data</ins>)
+    **C:** A state0 a két qregiszer összevont állapotát jelzi.
 <ins>state1</ins> <- Hadamard <sup>⊗n+1</sup> (<ins>state0</ins>)
-
-**C:** Mindegyik qbiten alkalmazunk egy Hadamard kaput.
-
-<ins>state2</ins> <- U-Controlled-CNOT(f, <ins>control</ins>, <ins>data</ins>)
-
-**C:** Az U-Controlled-CNOT egy olyan kaput jelöl, ami a CNOT kapuhoz hasonlóan működik, de a data ágon y ⊕ f(x) lesz a hatása.
-
+    **C:** Mindegyik qbiten alkalmazunk egy Hadamard kaput.
+<ins>state2</ins> <- U-Controlled-CNOT (f, <ins>control</ins>, <ins>data</ins>)
+    **C:** Az U-Controlled-CNOT egy olyan kaput jelöl, ami a CNOT kapuhoz hasonlóan működik, de a data ágon y ⊕ f(x) lesz a hatása.
 <ins>state3</ins> <- Hadamard <sup>n</sup> (<ins>state2</ins>)
-
 value <- <ins>state3</ins>
-
+    **C:** Megmérjük a qregisztert, eredményül klasszikus állapotot kapunk.
 if value is -1 or 1 then result <- true else result <- false
 </pre>
 
