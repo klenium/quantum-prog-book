@@ -18,6 +18,7 @@ A kvantum pszeudokódra is készült egy egységes ajánlás. E. Knill készíte
 7. Elágazások és ciklusok: Bár a programba valódi elágazást és ciklust csak akkor tudunk tenni, ha ismerjük (megmérjük) a regiszterek tartalmát, hogy össze tudjuk hasonlítani az értékeket, bizonyos unitáris operátorok játszhatnak olyan szerepet, mint a klasszikus elágazások, illetve az operátorok többszöri ismétlésével kaphatunk egy ciklust. A kvantum pszeudokód erre kínál szintaktikai lehetőséget: <ins>`if a then U(a)`</ins>, `for i=A to i=B`. Ezek a kifejezések átalakíthatók lennének a neki megfelelő (de lehet kevésbé beszédesebb) unitáris operátorokká.
 
 #### A Deutsch–Jozsa algoritmus leírása kvantum pszeudokóddal
+<pre>
 DeutschJozsa(n, f)
 
 Input: f egy konstans vagy kiegyensúlyozott függvény, n pedig az f függvény bemeneti kvantumregiszerének dimenziója (a qbit-ek száma).
@@ -49,6 +50,7 @@ Output: Klasszikus igaz, ha f konstans, illetve hamis, ha kiegegysúlyozott.
 value <- <ins>state3</ins>
 
 if value is -1 or 1 then result <- true else result <- false
+</pre>
 
 #### Értékelés
 - **Előnyök:** A kvantum psezudokód a legfontosabb dolgokra ad egységes formátumot, miközben kellő szabadságot ad az algoritmus leírásának teszterszabására. Az emberek számára könnyen áttekinthetővé teszi az algoritmusok értelmezését, technikai részletek nélkül.
