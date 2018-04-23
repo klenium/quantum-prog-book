@@ -49,3 +49,7 @@ Output: Klasszikus igaz, ha f konstans, illetve hamis, ha kiegegysúlyozott.
 value <- <ins>state3</ins>
 
 if value is -1 or 1 then result <- true else result <- false
+
+#### Értékelés.
+- **Előnyök:** A kvantum psezudokód a legfontosabb dolgokra ad egységes formátumot, miközben kellő szabadságot ad az algoritmus leírásának teszterszabására. Az emberek számára könnyen áttekinthetővé teszi az algoritmusok értelmezését, technikai részletek nélkül.
+- **Hátrányok:** Mivel kevés dolog van szabályozva, sokszor keveredik LaTeX, vagy más matematikai képleteket leíró nyelvekkel, amiknek a kódolása nehezebb feladat lehet. Mivel sok elemre nincs egységes ajánlás, a pszeudokód leírásában sok komment található, ami rontja a leírás minőségét.
