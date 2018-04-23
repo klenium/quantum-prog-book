@@ -45,7 +45,7 @@ A feladat a következő: Adott egy függvény, _`f(x)`_, amiről csak annyit tud
 
 A feladat megoldása egy egyszerű Java programban:
 
-```
+```java
 IntUnaryOperator function;
 int constantValue = new Random().nextInt(2);
 if (args[0].equals("constant")) function = (x) -> constantValue;
