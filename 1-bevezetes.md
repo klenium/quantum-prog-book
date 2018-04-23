@@ -45,6 +45,8 @@ A feladat a következő: Adott egy függvény, _`f(x)`_, amiről csak annyit tud
 
 A feladat megoldása egy egyszerű Java programban:
 
+> Ez még lehet nem azt csinálja amit kéne.
+
 ```java
 IntUnaryOperator function;
 int constantValue = new Random().nextInt(2);
