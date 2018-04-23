@@ -18,6 +18,40 @@ A kvantum pszeudokódra is készült egy egységes ajánlás. E. Knill készíte
 7. Elágazások és ciklusok: Bár a programba valódi elágazást és ciklust csak akkor tudunk tenni, ha ismerjük (megmérjük) a regiszterek tartalmát, hogy össze tudjuk hasonlítani az értékeket, bizonyos unitáris operátorok játszhatnak olyan szerepet, mint a klasszikus elágazások, illetve az operátorok többszöri ismétlésével kaphatunk egy ciklust. A kvantum pszeudokód erre kínál szintaktikai lehetőséget: <ins>`if a then U(a)`</ins>, `for i=A to i=B`. Ezek a kifejezések átalakíthatók lennének a neki megfelelő (de lehet kevésbé beszédesebb) unitáris operátorokká.
 
 #### A Deutsch–Jozsa algoritmus leírása kvantum pszeudokóddal
-```
+DeutschJozsa(n, f)
 
-```
+Input: f egy konstans vagy kiegyensúlyozott függvény, n pedig az f függvény bemeneti kvantumregiszerének dimenziója (a qbit-ek száma).
+
+Output: Klasszikus igaz, ha f konstans, illetve hamis, ha kiegegysúlyozott.
+
+
+
+<ins>control</ins> <- Initialize(0, n)
+
+**C:** A kvantumregiszterbe betöltünk n darab 0 fázisú qbitet.
+
+<ins>data</ins> <- Initialize(1)
+
+<ins>state0</ins> <- Merge(<ins>control</ins>, <ins>data</ins>)
+
+**C:** A state0 a két qregiszer összekapcsolt állapotát jelzi.
+
+<ins>state1</ins> <- Hadamard <sup>⊗n+1</sup> (<ins>state0</ins>)
+
+**C:** Mindegyik qbiten alkalmazunk egy Hadamard kaput.
+
+<ins>state2</ins> <- U-Controlled-CNOT(f, <ins>control</ins>, <ins>data</ins>)
+
+**C:** Az U-Controlled-CNOT egy olyan kaput jelöl, ami a CNOT kapuhoz hasonlóan működik, de a data ágon y ⊕ f(x) lesz a hatása.
+
+<ins>state3</ins> <- Hadamard <sup>n</sup> (<ins>state2</ins>)
+
+value <- <ins>state3</ins>
+
+result <- false
+
+if value is -1 or 1 then
+
+result <- true
+
+end
