@@ -39,7 +39,25 @@ Bár még jóval kevesebb nyelvet készítettem a kvantum programokhoz, mint a k
 
 # Kvantum programozási nyelvek
 
+Ebben a fejezetben néhány, egymástól eléggé eltérő kvantum programozással kapcsolatos nyelvet ismerhetünk meg. Az összehasonlíthatóság érdekében mindegyik nyelvnél találunk egy példát, ami a jól ismert Deutsch–Jozsa algoritmust mutatja be.
 
+A feladat a következő: Adott egy függvény, _`f(x)`_, amiről csak annyit tudunk, hogy néha egy konstans értéket rendel a bemenethez, máskor viszont úgy viselkedik, mint egy pénzfeldobás: az esetek felében _`a`_, másik felében _`b`_ értéket rendel a bemenethez. Határozzuk meg, egy konkrét esetben _`f`_ melyik szabály szerint működik!
+
+A feladat megoldása egy egyszerű Java programban:
+
+```
+IntUnaryOperator function;
+int constantValue = new Random().nextInt(2);
+if (args[0].equals("constant")) function = (x) -> constantValue;
+else function = (x) -> (x + constantValue) % 2;
+
+int n = Integer.parseInt(args[1]);
+int result = 0;
+for (int i = 0; i < n/2+1; ++i)
+    result += function.applyAsInt(i);
+String type = ((result == 0 || result == n/2+1) ? "constant" : "balanced");
+System.out.println("Function is " + type + ".");
+```
 
 
 [1]: https://www.w3.org/TR/html5/
