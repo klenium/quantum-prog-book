@@ -48,10 +48,4 @@ Output: Klasszikus igaz, ha f konstans, illetve hamis, ha kiegegysúlyozott.
 
 value <- <ins>state3</ins>
 
-result <- false
-
-if value is -1 or 1 then
-
-result <- true
-
-end
+if value is -1 or 1 then result <- true else result <- false
