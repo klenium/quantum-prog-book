@@ -33,7 +33,7 @@ Output: Klasszikus igaz, ha f konstans, illetve hamis, ha kiegegysúlyozott.
     **C:** Mindegyik qbiten alkalmazunk egy Hadamard kaput.
 <ins>state2</ins> <- U-Controlled-CNOT (f, <ins>control</ins>, <ins>data</ins>)
     **C:** Az U-Controlled-CNOT egy olyan kaput jelöl, ami a CNOT kapuhoz hasonlóan működik, de a data ágon y ⊕ f(x) lesz a hatása.
-<ins>state3</ins> <- Hadamard <sup>n</sup> (<ins>state2</ins>)
+<ins>state3</ins> <- Hadamard <sup>⊗n</sup> (<ins>state2</ins>)
 value <- <ins>state3</ins>
     **C:** Megmérjük a qregisztert, eredményül klasszikus állapotot kapunk.
 if value is -1 or 1 then result <- true else result <- false
