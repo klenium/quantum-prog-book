@@ -1,5 +1,5 @@
 # Bevezetés
-## A programok rövid története
+#### A programok rövid története
 
 A szoftverfejlesztés viszonylag új szakterület. A programozás ágazat kezdete megközelítőleg az 1950-es évekre rakható. Az ipari forradalmaknak köszönhetően ekkorra már fejlett gépek, elektronikus technológiák álltak a szakemberek rendelkezésére a számítógépek megépítéséhez, kezdődhetett a programnyelvek, szoftver terveési folyamatok célzott, irányított létrehozása. A programozás bő fél évszázados múltja alatt ezek drasztikusan átalakultak, a hatékonyságok és komplexitásuk sokszorosára fejlődött, a folyamatok kiszámíthatóbbak, gördülékenyebbek lettek. Kezdetben csak 1-1 művelet sikeres, automatizált végrehajtása volt a cél, napjainkban azonban számos más dolog is fontos. Voltak programnyelvek, amik hibásan lettek megtervezve, használatuk túl bonyolult volt emberek számára, nehéz volt leírni bennük komplex rendszereket, feladatokat, nem alkalmazkodtak a fejlesztendő program struktúrájához. Ezekből sokat tanultunk, a tapasztalataink alapján újabb és újabb rendszereket fejlesztettünk ki. Manapság már óriási szoftvereket építünk, bonyolult algoritmusokat hozunk létre, számtalan mérnök foglalkozik egyszerre a feladattal, az elkészült programoktól pedig emberéletek függhetnek. Egyre rövidebb idő alatt, egyre nehezebb programot, egyre kevesebb pénzből kell fejlesztenünk, alkalmazkodva a kor elvárásának.
 
@@ -7,11 +7,11 @@ A klasszikus, elektronikus számítógépek azonban kezdenek csúcspontjukhoz ju
 
 A kvantum-programozás területe mostanában kezd megszületni. Napjainkban a kvantum-számítógép még fejlesztés alatt áll, messze vagyunk attól, hogy használatuk olyan széles körben elterjedt legyen, mint a mostani elektronikus személyi, vagy szerver oldali számítógépeké. Ennek ellenére egyre több és több kvantum-programozási nyelv jelenik meg, számtalan olyan algoritmust megterveztek már, amit később kvantum-számítógépeken akarnak futtatni.
 
-## Igény a kvantum programokra
+#### Igény a kvantum programokra
 
 Mi értelme van kvantum-programokat fejleszteni, ha még nem is igazán tudjuk min végrehajtani ezeket a programokat? A klasszikus programozás fejlődése során rájöttünk, hogy sok elmélet hibás, és ezek a hibák csak elterjedt használatuk után derültek ki, rengeteg kárt okozva a fejlesztőknek és felhasználóknak. Sok, korábban hatékonynak hitt algoritmushoz találtak annál sokkal gyorsabb, kevesebb menórigényű stb. változatot, biztonságosank hitt protokollokban találtak támadható pontot. Mivel a kvantumszámítógépnek nagy jövőt jósolnak, tudhatjuk, hogy a közeljövőben valós igény lesz a kvantum-programokra. Annak érdekében, hogy minimalizáljuk a hibás elméletek és fejlesztési módszerek elterjedését, vagy éppen felfedezzük, később mit tudunk még alkalmazni, a kvantumszámítógépkre szánt programok fejlesztése már most is elkezdődött. A sok évtizedekig tartó algoritmusok, protokollok fejlesztése és ellenőrzése már most is lehetséges. Szükséges, hogy találjunk olyan módszereket, amik leválthatják azokat az eljárásokat, amiket napjainkban használunk a klasszikus számítógépeknél, de egy kvantum-számítógépnek gyerekjáték lenne megkerülnie, hogy ha üzembe tudnak már helyezni nagyszámú kvantum-számítógépet, a szolgáltatások továbbra is működőképesek maradhassanak. Ilyen pl. a titkosított kommunikációra használt RSA algoritmus, ami az elektronikus számítógépeknél még kellő védelmet ad, de ha a kvantum-számítógépek elterjednek, már nem lehetne az interneten biztonságosan fizetni. Mivel azonban nem akarunk lemondani a biztonságos internetes fizetésről, más módszeket kell felkutatnunk, amik matematikailag bizonyítottan biztonságosak tudnak maradni a jövőre nézve is.
 
-## A klasszikus és kvantum programok jövője
+#### A klasszikus és kvantum programok jövője
 
 A kvantum-számítógépek megjelenésével nem érdemes eltemetni az elektronikus számítógépeket. Várhatóan a két technológia nem lecseréli egymást, hanem együtt működnek tovább. Nem éri meg ugyanis minden feladatra a (most még) méregdrága csúcstechnológiát használni. Vegyünk például egy kézi számológépet. Igaz ugyan, hogy nem tud egy nagyon byonolult, 100 sort elfoglaló egyenletet több millió tizedesjegy pontosságú eredményét kikalkulálni egy szempillantásnyi idő alatt, na de kinek lenne erre igénye? A grafikus kártyák teljesítménye, és a monitor frissítési gyorsasága se teszi lehetővé (jelenleg), hogy másodpercenként több millió, teljesen élethű képkockát megjelenítsen egy program, azonban tudjuk, hogy az emberi szem nem is lenne képes értelmezni ezt a sok részletes információt kellő gyorsasággal. Egy táblázatos adminisztrátori program működésére nem lenne hatással, ha azt kvantumszámítógépen futtatnánk. A kvantum-programokat számításigényes (és ebből adódóan időigényes) feladatoknál éri meg használni. Nem megpelő, hogy a jelenleg elérhető kvantum példaprogramok közül sok ilyen eseteket ír le.
 
@@ -23,10 +23,10 @@ Ha a kvantumszámítógép elérhető lesz, a kvantum programnyelvek nagy lendü
 
 _Megjegyzés:_ A programok leírását, értelmezését lehetővé tevő nyelveket típusuk szerint különféle kategóriákba soroljuk, és emiatt eltérően is hívjuk őket (pl. a [HTML][1] jelölő, a [Java][2] programozási, a [VHDL][3] hardverleró nyelv, az [x86][4] pedig egy utasításkészlet), noha programokkal kapcsolatos területen használjuk fel őket. A továbbiakban a "kvantum programozási nyelv" főleg csak a kvantumszámítógépekkel és programokkal kapcsolatba hozható jellemzésre használt, nem pedig a nyelv céljának, típusának meghatározására.
 
-## Eltérések a klasszikus és kvantum műveletei programok között
+#### Eltérések a klasszikus és kvantum műveletei programok között
 > Speciális kapuk használata, qbitek elérése, mérési pontatlanság, párhuzamosság, több adat egyben kezelve.
 
-## Kvantum programozási nyelvek csoportosítása
+#### Kvantum programozási nyelvek csoportosítása
 
 Bár még jóval kevesebb nyelvet készítettem a kvantum programokhoz, mint a klasszikus programokhoz, már most is elég sok kategóriát lefednek az elérhető nyelvek, így különféle területeken, különféle feladathoz lehet őket felhasználni:
 
