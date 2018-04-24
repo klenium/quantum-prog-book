@@ -64,6 +64,7 @@ namespace DeutschJozsaTest
     }
 }
 ```
+
 ```
 namespace DeutschJozsaTest {
     open Microsoft.Quantum.Primitive;
