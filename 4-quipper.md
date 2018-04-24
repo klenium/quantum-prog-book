@@ -42,4 +42,8 @@ main = do
                 return ([x,y],out)
 ```
 
+Ha futtatjuk a programot, és a kiegegysúlyozott típust választjuk, a következő ábrát generálja a Quipper:
+
+<img alt="Quipper által generált kvantum-hálózat képe kiegegysúlyozott függvény esetében" src="quipper-balanced-output.svg" width="100%" />
+
 [1]: https://arxiv.org/pdf/1406.4481.pdf
