@@ -1,5 +1,4 @@
 ## Kvantum pszeudokód
-> Egyszerű algoritmus leírásra használható nyelv, nem foglalkozik a fordítás részével.
 
 A pszeudokód nem tekinthető programozási nyelvnek, hiszen a célja pont az, hogy absztrakt módon, konkrét implementáció nélkül lehessen leírni vele az algoritmusokat. A pszeudokód elvben bármilyen másik programozási nyelvre átalakítható egyszerűen, majd annak felhasználásával futtatható. A pszeudókód célja, hogy az emberek számára könnyen értelmezhető, csak a lényeges dolgokra koncentrálva, nyelvfüggetlen leírást adhassunk különféle algoritmusokról.
 
