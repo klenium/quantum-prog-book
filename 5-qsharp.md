@@ -1,5 +1,4 @@
 ## A Q# nyelv
-> Nemrég jött ki, MS csinálja, hasonlít a C#-ra, szimulátor.
 
 A Q# nyelvet 2017 végén mutatta be a Microsoft, jelezve, hogy a cég a későbbiekben nagy figyelmet fog fordítani a kvantumprogramozásnak. A [Microsoft Quantum Development Kit][2] nagyban épít már korábban kifejlesztett és bevált technológiákra, mint pl. a C# nyelv, a Visual Studio fejlesztőkörnyezet. A Q# nyelv sok sajátosságot mutat más, főleg C# és F# nyelvekkel, ami könnyebbé teszi a szintaktika megértését, gyorsítva ezzel a fejlesztési folyamatot. Viszonylag gazdag elemekkel rendelkezik, a benne leírt algoritmusok könnyedén felismerhetők.
 
