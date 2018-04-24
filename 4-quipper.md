@@ -1,4 +1,4 @@
-## A Quipper nyelv
+## Quipper
 
 A Quipper nyelvet 2013-tól kezdték el fejleszteni több ember közreműködésével. A Quipper tulajdonképpen egy Haskell könyvtár, aminek felhasználásával készíthetünk Haskell nyelven írt programot. Számtalan kvantum programozással kapcsolatos műveletet, típust, eljárást biztosít a Quipper a fejlesztő számára, illetve sok, előre megírt algoritmus található benne. A Quipper képes szimulációra, illetve a leírt kapuk/adatokról képeket készíteni. Ebben a fejezetben az utóbbival foglalkozunk csak.
 
