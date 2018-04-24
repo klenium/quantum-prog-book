@@ -1,5 +1,4 @@
 ## A Quipper nyelv
-> Könnyen generálhatóak vele vizuális kvantum-áramkörök.
 
 A Quipper nyelvet 2013-tól kezdték el fejleszteni több ember közreműködésével. A Quipper tulajdonképpen egy Haskell könyvtár, aminek felhasználásával készíthetünk Haskell nyelven írt programot. Számtalan kvantum programozással kapcsolatos műveletet, típust, eljárást biztosít a Quipper a fejlesztő számára, illetve sok, előre megírt algoritmus található benne. A Quipper képes szimulációra, illetve a leírt kapuk/adatokról képeket készíteni. Ebben a fejezetben az utóbbival foglalkozunk csak.
 
@@ -57,5 +56,10 @@ main = do
 Ha futtatjuk a programot, és a kiegyensúlyozott típust választjuk, a következő ábrát generálja a Quipper:
 
 <img alt="Quipper által generált kvantum-hálózat képe kiegyensúlyozott függvény esetében" src="quipper-balanced-output.svg" width="100%" />
+
+#### Értékelés
+
+- **Előnyök:** Kisméretű hálózatok, vagy hálózatok részleteinek szemléltetésére ábrák sokkal alkalmasabbak, mint programkódok. Ránézésre is egyből meg tudjuk mondani, melyik kvantumbiten milyen műveleteket végzünk el. Mivel a Quipper a Haskell nyelvre épül, annak a nyelvnek minden elemeét felhasználhatjuk, illetve aki jártas már a Haskell programozásban, nem kell új színtaktikát megtanulnia.
+- **Hátrányok:** A generált ábrák kezelése kissé nehézkes, ugyanis nem közvetlenül fájlba menti le a PDF dokumentumot, hanem külső programmal nyitja meg. Az ábrákon sokszor nem lehet részleteket feltünteni. Néha a hálózat túl nagy méretű, ami miatt kicsi lesz az ábra, vagy túl sok, össze-vissza kapcsolt műveletet hajtunk végre, ami miatt áttekinthetetlen lesz (hasonlóan a bonyolult nyomtatott áramkörök terveihez).
 
 [1]: https://arxiv.org/pdf/1406.4481.pdf
