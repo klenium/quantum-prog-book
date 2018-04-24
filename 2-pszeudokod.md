@@ -1,11 +1,11 @@
 ## Kvantum pszeudokód
 > Egyszerű algoritmus leírásra használható nyelv, nem foglalkozik a fordítás részével.
 
-A pszeudokód nem tekinthető programozási nyelvnek, hiszen a célja pont az, hogy absztrakt módon, konkrét implementáció nélkül lehessen leírni velek az algoritmusokat. A pszeudokód elvben bármilyen másik programozási nyelvre átalakítható egyszerűen, majd annak felhasználásával futtatható. A pszeudókód célja, hogy az emberek számára könnyen értelmezhető, csak a lényeges dolgokra koncentrálva, nyelvfüggetlen leírást adhassunk különféle algoritmusokról.
+A pszeudokód nem tekinthető programozási nyelvnek, hiszen a célja pont az, hogy absztrakt módon, konkrét implementáció nélkül lehessen leírni vele az algoritmusokat. A pszeudokód elvben bármilyen másik programozási nyelvre átalakítható egyszerűen, majd annak felhasználásával futtatható. A pszeudókód célja, hogy az emberek számára könnyen értelmezhető, csak a lényeges dolgokra koncentrálva, nyelvfüggetlen leírást adhassunk különféle algoritmusokról.
 
 A pszeudokódoknak többféle változata is van, kisebb-nagyobb eltérésekkel. Ezek többnyire a megértést nem akadályozzák, mert pl. csak másfajta jelölést használnak az értékadáshoz (`let x be zero`, vagy `x := 0`). A könnyebb kezelhetőség érdekében különböző szabványok, ajánlások születtek a pszeudokódok készítésére.
 
-A hagyományos pszeudokódnak van kvantumos változata is. A felhasználási cél egyező: algoritmusok leírása implementációtól függetlenül. A kvantum pszeudokód nem sokban különbözik a hagyományostól, mert bár sok új funkciót lehetséges kvantum programokkal elkészíteni, ezek többségének leírása a hagyományos eszközökkel is lehetséges (pl. az unitáros kapuk hagyományos metódusokkal leírhatóak).
+A hagyományos pszeudokódnak van kvantumos változata is. A felhasználási cél egyező: algoritmusok leírása implementációtól függetlenül. A kvantum pszeudokód nem sokban különbözik a hagyományostól, mert bár sok új funkciót lehetséges kvantum programokkal elkészíteni, ezek többségének leírása a hagyományos eszközökkel is lehetséges (pl. az unitáros kapuk hagyományos metódusokkal leírhatók).
 
 A kvantum pszeudokódra is készült egy egységes ajánlás. E. Knill készítette 1996-ban a kezdetleges ajánlást, azóta módosítás nem történt rajta. Ez a dokumentum nem tárgyalja a hagyományos pszeudokód elemeit, csak a kvantumprogramozással kapcsolatos dolgokkal egészíti ki azt. Az ajánlás egy része formai leírás. Fő elemei:
 
@@ -40,5 +40,5 @@ if value is -1 or 1 then result 🠄 true else result 🠄 false
 </pre>
 
 #### Értékelés
-- **Előnyök:** A kvantum psezudokód a legfontosabb dolgokra ad egységes formátumot, miközben kellő szabadságot ad az algoritmus leírásának teszterszabására. Az emberek számára könnyen áttekinthetővé teszi az algoritmusok értelmezését, technikai részletek nélkül.
+- **Előnyök:** A kvantum psezudokód a legfontosabb dolgokra ad egységes formátumot, miközben kellő szabadságot ad az algoritmus leírásának testerszabására. Az emberek számára könnyen áttekinthetővé teszi az algoritmusok értelmezését, technikai részletek nélkül.
 - **Hátrányok:** Mivel kevés dolog van szabályozva, sokszor keveredik LaTeX, vagy más matematikai képleteket leíró nyelvekkel, amiknek a kódolása nehezebb feladat lehet. Mivel sok elemre nincs egységes ajánlás, a pszeudokód leírásában sok komment található, ami rontja a leírás minőségét.
