@@ -41,3 +41,5 @@ main = do
                 qnot_at out `controlled` y
                 return ([x,y],out)
 ```
+
+[1]: https://arxiv.org/pdf/1406.4481.pdf
