@@ -45,6 +45,7 @@ Tesztelésre használt szimuláció:
 
 Az algoritmust leíró kvantum program:
 
+{% include_relative assets/code/DeutschJozsaTest.operation.qs %}
 {% highlight C# %}
 {% include_relative assets/code/DeutschJozsaTest.operation.qs %}
 {% endhighlight %}
