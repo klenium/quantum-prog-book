@@ -1,3 +1,4 @@
+{% highlight haskell %}
 import Quipper
 
 deutsch_jozsa_circuit :: (([Qubit], Qubit) -> Circ ([Qubit], Qubit)) -> Circ [Bit]
@@ -32,3 +33,4 @@ main = do
                 qnot_at out `controlled` x
                 qnot_at out `controlled` y
                 return ([x,y],out)
+{% endhighlight %}
