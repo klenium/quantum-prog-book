@@ -37,33 +37,33 @@ Egy tipikus Q# nyelven leírt program felépítése:
 
 _Megjegyzés:_ A példaprogram a [hivatalos Q# repository][1]-ből származik, annak egyszerűsített változata.
 
-<pre><span></span><span class="k">using</span> <span class="nn">Microsoft.Quantum.Simulation.Core</span><span class="p">;</span>
-<span class="k">using</span> <span class="nn">Microsoft.Quantum.Simulation.Simulators</span><span class="p">;</span>
+```C#
+using Microsoft.Quantum.Simulation.Core;
+using Microsoft.Quantum.Simulation.Simulators;
 
-<span class="k">namespace</span> <span class="nn">DeutschJozsaTest</span>
-<span class="p">{</span>
-    <span class="k">class</span> <span class="nc">Driver</span>
-    <span class="p">{</span>
-        <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
-        <span class="p">{</span>
-            <span class="kt">var</span> <span class="n">sim</span> <span class="p">=</span> <span class="k">new</span> <span class="n">QuantumSimulator</span><span class="p">(</span><span class="n">throwOnReleasingQubitsNotInZeroState</span><span class="p">:</span> <span class="k">true</span><span class="p">);</span>
+namespace DeutschJozsaTest
+{
+    class Driver
+    {
+        static void Main(string[] args)
+        {
+            var sim = new QuantumSimulator(throwOnReleasingQubitsNotInZeroState: true);
 
-            <span class="kt">bool</span> <span class="n">isConstant</span> <span class="p">=</span> <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Random</span><span class="p">().</span><span class="n">Next</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">2</span><span class="p">)</span> <span class="p">==</span> <span class="m">0</span><span class="p">;</span>
-            <span class="n">System</span><span class="p">.</span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">"The function operates as "</span> <span class="p">+</span> <span class="p">(</span><span class="n">isConstant</span> <span class="p">?</span> <span class="s">"constant"</span> <span class="p">:</span> <span class="s">"balanced"</span><span class="p">)</span> <span class="p">+</span> <span class="s">"."</span><span class="p">);</span>
+            bool isConstant = new System.Random().Next(0, 2) == 0;
+            System.Console.WriteLine("The function operates as " + (isConstant ? "constant" : "balanced") + ".");
 
-            <span class="c1">// Manuálisan megadjuk, a függvény melyik esetekben ad vissza 0-t vagy 1-et.</span>
-            <span class="kt">var</span> <span class="n">onesForConstant</span> <span class="p">=</span> <span class="k">new</span> <span class="n">QArray</span><span class="p">&lt;</span><span class="kt">long</span><span class="p">&gt;</span> <span class="p">{</span> <span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span> <span class="p">};</span>
-            <span class="kt">var</span> <span class="n">onesForBalanced</span> <span class="p">=</span> <span class="k">new</span> <span class="n">QArray</span><span class="p">&lt;</span><span class="kt">long</span><span class="p">&gt;</span> <span class="p">{</span> <span class="m">1</span><span class="p">,</span> <span class="m">2</span> <span class="p">};</span>
-            <span class="kt">var</span> <span class="n">oneValues</span> <span class="p">=</span> <span class="n">isConstant</span> <span class="p">?</span> <span class="n">onesForConstant</span> <span class="p">:</span> <span class="n">onesForBalanced</span><span class="p">;</span>
-            <span class="kt">var</span> <span class="n">result</span> <span class="p">=</span> <span class="n">DeutschJozsaTestCase</span><span class="p">.</span><span class="n">Run</span><span class="p">(</span><span class="n">sim</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="n">oneValues</span><span class="p">).</span><span class="n">Result</span><span class="p">;</span>
+            // Manuálisan megadjuk, a függvény melyik esetekben ad vissza 0-t vagy 1-et.
+            var onesForConstant = new QArray<long> { 0, 1, 2, 3 };
+            var onesForBalanced = new QArray<long> { 1, 2 };
+            var oneValues = isConstant ? onesForConstant : onesForBalanced;
+            var result = DeutschJozsaTestCase.Run(sim, 2, oneValues).Result;
 
-            <span class="n">System</span><span class="p">.</span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">"Detected function as "</span> <span class="p">+</span> <span class="p">(</span><span class="n">result</span> <span class="p">?</span> <span class="s">"constant"</span> <span class="p">:</span> <span class="s">"balanced"</span><span class="p">)</span> <span class="p">+</span> <span class="s">"."</span><span class="p">);</span>
-            <span class="n">System</span><span class="p">.</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre>
-
+            System.Console.WriteLine("Detected function as " + (result ? "constant" : "balanced") + ".");
+            System.Console.ReadLine();
+        }
+    }
+}
+```
 ```
 namespace DeutschJozsaTest {
     open Microsoft.Quantum.Primitive;
