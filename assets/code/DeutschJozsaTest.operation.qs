@@ -1,3 +1,4 @@
+{% highlight C# %}
 namespace DeutschJozsaTest {
     open Microsoft.Quantum.Primitive;
     open Microsoft.Quantum.Canon;
@@ -33,3 +34,4 @@ namespace DeutschJozsaTest {
          }
     }
 }
+{% endhighlight %}
