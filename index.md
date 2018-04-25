@@ -1,7 +1,6 @@
 ---
+Layout: default
 ---
-
-@import "{{ site.theme }}";
 
 # Tartalomjegyzék
 1. [Bevezetés](#bevezetés)
