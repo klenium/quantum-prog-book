@@ -6,6 +6,16 @@ layout: default
     font-size: smaller;
     vertical-align: super;
   }
+  ol {
+    counter-reset: item;
+  }
+  li {
+    display: block;
+  }
+  li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+  }
 </style>
 
 # Tartalomjegyzék
