@@ -1,6 +1,6 @@
 ---
-layout: default
 ---
+
 @import "{{ site.theme }}";
 
 # Tartalomjegyzék
