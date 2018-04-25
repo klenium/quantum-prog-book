@@ -70,6 +70,7 @@ public class Main {
         String type = ((result == 0 || result == n/2+1) ? "constant" : "balanced");
         System.out.println("Function is " + type + ".");
     }
+    true
 }
 {% endhighlight %}
 
