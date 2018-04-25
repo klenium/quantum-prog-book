@@ -1,3 +1,4 @@
+{% highlight java %}
 package DeutschJozsaTest;
 
 import java.util.Random;
@@ -23,3 +24,4 @@ public class Main {
         System.out.println("Function is " + type + ".");
     }
 }
+{% endhighlight %}
