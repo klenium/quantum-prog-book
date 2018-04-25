@@ -59,8 +59,6 @@ A feladat a következő: Adott egy függvény, `f(x)`, amiről csak annyit tudun
 
 A feladat megoldható klasszikus programokkal is, azonban lépésszámra jóval nagyobb, mint amennyire a kvantumprogramoknak szüksége van. Egy lehetséges klasszikus megoldás, Java nyelven:
 
-> Ez még lehet nem azt csinálja amit kéne.
-
 {% include_relative assets/code/DeutschJozsaTest.java %}
 
 
