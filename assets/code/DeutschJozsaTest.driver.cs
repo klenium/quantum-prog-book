@@ -1,3 +1,4 @@
+{% highlight C# %}
 using Microsoft.Quantum.Simulation.Core;
 using Microsoft.Quantum.Simulation.Simulators;
 
@@ -23,3 +24,4 @@ namespace DeutschJozsaTest
         }
     }
 }
+{% endhighlight %}
