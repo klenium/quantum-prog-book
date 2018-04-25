@@ -19,7 +19,7 @@ Többnyire a kényelmes, emberek által jól értelmezhető programnyelveketben 
 
 Ha a kvantumszámítógép elérhető lesz, a kvantum programnyelvek nagy lendületet fognak kapni. Új fejlesztőkörnyezeteket hoznak létre, vagy ha lehetséges, beépítik a már meglévő rendszerekbe a kvantum programok készítéséhez szükséges eszközöket. Várhatóan lesznek próbálkozások arra, hogy egyes programnyelveket kiterjesszék a kvantum programok világára is, hogy a fejlesztők egységes nyelven tudjanak fejleszteni a kettő között, ne kelljen külön megtanulni a sok dologban hasonlító eljárásokat. A jelenlegi szimulátorokat leváltják majd a valós fordítóprogramok.
 
-# Kvantumprogramok felépítése
+# Kvantumprogramok jellemzői
 
 _Megjegyzés:_ A programok leírását, értelmezését lehetővé tevő nyelveket típusuk szerint különféle kategóriákba soroljuk, és emiatt eltérően is hívjuk őket (pl. a [HTML][1] jelölő, a [Java][2] programozási, a [VHDL][3] hardverleíró nyelv, az [x86][4] pedig egy utasításkészlet), noha programokkal kapcsolatos területen használjuk fel őket. A továbbiakban a "kvantum programozási nyelv" főleg csak a kvantumszámítógépekkel és programokkal kapcsolatba hozható jellemzésre használt, nem pedig a nyelv céljának, típusának meghatározására.
 
