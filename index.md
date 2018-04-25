@@ -17,3 +17,4 @@ Layout: default
 {% include_relative 3-qcl.md %}
 {% include_relative 4-quipper.md %}
 {% include_relative 5-qsharp.md %}
+{% include_relative 6-osszefoglalas.md %}
