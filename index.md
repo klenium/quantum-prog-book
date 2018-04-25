@@ -9,13 +9,13 @@ layout: default
 </style>
 
 # Tartalomjegyzék
-1. [Bevezetés](#bevezetés)
-2. [Kvantumprogramok felépítése](#kvantumprogramok-felépítése)
-3. [Kvantum programozási nyelvek](#kvantum-programozási-nyelvek)
-___3.1. [Kvantum pszeudokód](#kvantum-pszeudokód)
-___3.2. [QCL](#qcl)
-___3.3. [Quipper](#quipper)
-___3.4. [Q#](#q)
+_1. [Bevezetés](#bevezetés)
+_2. [Kvantumprogramok felépítése](#kvantumprogramok-felépítése)
+_3. [Kvantum programozási nyelvek](#kvantum-programozási-nyelvek)
+__3.1. [Kvantum pszeudokód](#kvantum-pszeudokód)
+__3.2. [QCL](#qcl)
+__3.3. [Quipper](#quipper)
+__3.4. [Q#](#q)
 
 {% include_relative 1-bevezetes.md %}
 {% include_relative 2-pszeudokod.md %}
