@@ -10,6 +10,7 @@ Layout: default
    2. [QCL](#qcl)
    3. [Quipper](#quipper)
    4. [Q#](#q)
+4. [Összefoglalás](#összefoglalás)
 
 {% include_relative 1-bevezetes.md %}
 {% include_relative 2-pszeudokod.md %}
