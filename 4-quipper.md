@@ -55,7 +55,7 @@ main = do
 
 Ha futtatjuk a programot, és a kiegyensúlyozott típust választjuk, a következő ábrát generálja a Quipper:
 
-<img alt="Quipper által generált kvantum-hálózat képe kiegyensúlyozott függvény esetében" src="quipper-balanced-output.svg" width="100%" />
+<img  src="assets/images/quipper-balanced-output.svg" width="100%" alt="Quipper által generált kvantum-hálózat képe kiegyensúlyozott függvény esetében" />
 
 #### Értékelés
 
