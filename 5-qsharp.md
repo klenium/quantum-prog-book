@@ -37,7 +37,8 @@ Egy tipikus Q# nyelven leírt program felépítése:
 
 _Megjegyzés:_ A példaprogram a [hivatalos Q# repository][1]-ből származik, annak egyszerűsített változata.
 
-```C#
+{% highlight C# %}
+
 using Microsoft.Quantum.Simulation.Core;
 using Microsoft.Quantum.Simulation.Simulators;
 
@@ -63,7 +64,8 @@ namespace DeutschJozsaTest
         }
     }
 }
-```
+{% endhighlight %}
+
 ```
 namespace DeutschJozsaTest {
     open Microsoft.Quantum.Primitive;
