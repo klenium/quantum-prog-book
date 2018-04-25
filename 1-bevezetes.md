@@ -49,9 +49,7 @@ A feladat megoldható klasszikus programokkal is, azonban lépésszámra jóval 
 
 > Ez még lehet nem azt csinálja amit kéne.
 
-{% highlight java %}
 {% include_relative assets/code/DeutschJozsaTest.java %}
-{% endhighlight %}
 
 
 [1]: https://www.w3.org/TR/html5/
