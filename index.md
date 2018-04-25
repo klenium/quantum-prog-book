@@ -1,6 +1,5 @@
 ---
 Layout: default
-Title: 
 ---
 
 # Tartalomjegyzék
