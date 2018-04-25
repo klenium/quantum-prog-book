@@ -9,7 +9,7 @@ Layout: default
    1. [Kvantum pszeudokód](#kvantum-pszeudokód)
    2. [QCL](#qcl)
    3. [Quipper](#quipper)
-   4. [Q#](#q)
+   4. [Q#](#q-sharp)
 4. [Összefoglalás](#összefoglalás)
 
 {% include_relative 1-bevezetes.md %}
