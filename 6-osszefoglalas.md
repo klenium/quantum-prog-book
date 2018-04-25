@@ -1,3 +1,7 @@
 # Összefoglalás
 
-> Néhány mondatban összefoglalva a kvantumprogramozás állapota.
+Mint látható, a klasszikus- és a kvantumprogramok között sok hasonlóság és eltérés található egyaránt. Jelenleg még nem léteznek igazi kvantum programok, többnyire csak szimulációval hajtják végre a leírt algoritmusokat, statisztikákat készítenek az eredményekről, vagy modelleket, hálózatokat készítenek hozzá. A kvantum programozási nyelvek egy része még fejlesztés alatt áll (vagy éppen abbamaradt), ám folyamatosan jönnek létre új nyelvek, és fejlesztőeszközök.
+
+A kvantum programozási nyelvek nagy jövőnek néznek elé. Valamelyest követjük a klasszikus programozás életciklusát: legelsőnek a működőképes, egyszerű nyelvek jöttek létre (mint pl. a QCL), majd az új nyelvek már egyre több szempontot figyelembe vettek, felhasználtak bevált módszereket (mint pl. a Q# esetében). A kvantumszámítógép megjelenésével erőteljesebb fejlesztés várható ezen a területen.
+
+A bemutatott nyelveken kívül számtalan másik is elérhető. Amiket megismerhettünk, azok lényegesen eltérnek egymástól, más esetekben érdemes őket használni. Ha absztrakt módon, főleg a matematikai jellemzőket kiemelve szeretnénk leírni algoritmusokat, használhatjuk a kvantum pszeudokódot. A Quipper-rel jól áttekinthető ábrákat hozhatunk létre, amik pl. tanításra felhasználhatóak. A Q# nyelv segítségével könnyen kezelhető kvantumszimulátorhoz férhetünk hozzá, amivel tesztelni is lehet az elméleti dolgokat. Igényeiknek megfelelően az interneten kereshetünk másféle nyelveket is.
