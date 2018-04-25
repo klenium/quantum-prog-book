@@ -24,7 +24,6 @@ Ha a kvantumszámítógép elérhető lesz, a kvantum programnyelvek nagy lendü
 _Megjegyzés:_ A programok leírását, értelmezését lehetővé tevő nyelveket típusuk szerint különféle kategóriákba soroljuk, és emiatt eltérően is hívjuk őket (pl. a [HTML][1] jelölő, a [Java][2] programozási, a [VHDL][3] hardverleíró nyelv, az [x86][4] pedig egy utasításkészlet), noha programokkal kapcsolatos területen használjuk fel őket. A továbbiakban a "kvantum programozási nyelv" főleg csak a kvantumszámítógépekkel és programokkal kapcsolatba hozható jellemzésre használt, nem pedig a nyelv céljának, típusának meghatározására.
 
 #### Eltérések a klasszikus és kvantum programok között
-> Speciális kapuk használata, qbitek elérése, mérési pontatlanság, párhuzamosság, több adat egyben kezelve.
 
 A klasszikus programok felépítése néhány szempontból hasonlít a kvantum programokéra, más esetekben azonban gyökeres eltérések vannak köztük. Néhány ilyen eltérés (a teljesség igénye nélkül):
 
