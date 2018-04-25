@@ -1,5 +1,6 @@
 ---
 Layout: default
+Title: {{ site.title | default: site.github.repository_name }}
 ---
 
 # Tartalomjegyzék
