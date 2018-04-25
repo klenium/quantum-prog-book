@@ -9,6 +9,7 @@ sup {
 }
 ol {
   counter-reset: item;
+  margin-bottom: 0px;
 }
 li {
   display: block;
