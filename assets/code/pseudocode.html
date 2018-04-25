@@ -1,10 +1,11 @@
 <pre class="highlight">
-DeutschJozsa (n, f)
-Input: f egy konstans vagy kiegyensúlyozott függvény, n pedig az f függvény bemeneti kvantumregiszerének dimenziója (a qbit-ek száma).
-Output: Klasszikus igaz, ha f konstans, illetve hamis, ha kiegegysúlyozott.
+<span class="nf">DeutschJozsa</span><span class="o">(</span><span class="n">n</span><span class="o">,</span> <span class="n">f</span><span class="o">)</span>
+<span class="k">Input:</span> <span class="s">f egy konstans vagy kiegyensúlyozott függvény, n pedig az f függvény
+       bemeneti kvantumregiszerének dimenziója (a qbit-ek száma).</span>
+<span class="k">Output:</span> <span class="s">Klasszikus igaz, ha f konstans, illetve hamis, ha kiegegysúlyozott.</span>
 
 
-<ins>control</ins> 🠄 Initialize (0, n)
+<span class="n"><ins>control</ins></span> <span class="o">🠄</span> <span class="nf">Initialize</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="n">n</span><span class="o">)</span>
     <span class="c1"><strong>C:</strong> A kvantumregiszterbe betöltünk n darab 0 fázisú qbitet.</span>
 <ins>data</ins> 🠄 Initialize (1)
 <ins>state0</ins> 🠄 Merge (<ins>control</ins>, <ins>data</ins>)
