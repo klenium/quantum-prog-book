@@ -16,7 +16,7 @@ A Quipper lehetőséget ad a kép testreszabására pl. kommentek, feliratok elh
 
 _Megjegyzés:_ A példaprogram a [Five Quantum Algorithms Using Quipper][1] című rövid útmutatóból származik, annak egyszerűsített változata.
 
-```haskell
+{% highlight haskell %}
 import Quipper
 
 deutsch_jozsa_circuit :: (([Qubit], Qubit) -> Circ ([Qubit], Qubit)) -> Circ [Bit]
@@ -51,7 +51,7 @@ main = do
                 qnot_at out `controlled` x
                 qnot_at out `controlled` y
                 return ([x,y],out)
-```
+{% endhighlight %}
 
 Ha futtatjuk a programot, és a kiegyensúlyozott típust választjuk, a következő ábrát generálja a Quipper:
 
