@@ -5,7 +5,7 @@ Title: Kvantum programozási nyelvek
 
 # Tartalomjegyzék
 1. [Bevezetés](#bevezetés)
-2. [Kvantumprogramok felépítése](#kvantumprogramok-felépítése)
+2. [Kvantumprogramok jellemzői](#kvantumprogramok-jellemzői)
 3. [Kvantum programozási nyelvek](#kvantum-programozási-nyelvek)
    1. [Kvantum pszeudokód](#kvantum-pszeudokód)
    2. [QCL](#qcl)
