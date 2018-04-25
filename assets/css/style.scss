@@ -11,10 +11,10 @@ ol {
   counter-reset: item;
   margin-bottom: 0px;
 }
-li {
+ol > li {
   display: block;
 }
-li:before {
+ol > li:before {
   content: counters(item, ".") ". ";
   counter-increment: item;
 }
