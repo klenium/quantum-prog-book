@@ -47,7 +47,7 @@ A feladat megoldása egy egyszerű Java programban:
 
 > Ez még lehet nem azt csinálja amit kéne.
 
-```java
+{% highlight java %}
 package DeutschJozsaTest;
 
 import java.util.Random;
@@ -71,7 +71,7 @@ public class Main {
         System.out.println("Function is " + type + ".");
     }
 }
-```
+{% endhighlight %}
 
 
 [1]: https://www.w3.org/TR/html5/
