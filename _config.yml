@@ -1,7 +1,3 @@
 theme: jekyll-theme-slate
 title: Kvantum programozási nyelvek
 description: Házi feladat a BMEVIHIAV06 tantárgyhoz; a kvantum programozás elméleti bemutatása, már elérhető programozási nyelvek áttekintése.
-markdown: kramdown
-highlighter: rouge
-kramdown:
-  input: GFM
