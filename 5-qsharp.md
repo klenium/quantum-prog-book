@@ -37,7 +37,7 @@ Egy tipikus Q# nyelven leírt program felépítése:
 
 _Megjegyzés:_ A példaprogram a [hivatalos Q# repository][1]-ből származik, annak egyszerűsített változata.
 
-{% highlight C# %}
+{% highlight C# linenos %}
 
 using Microsoft.Quantum.Simulation.Core;
 using Microsoft.Quantum.Simulation.Simulators;
@@ -66,7 +66,7 @@ namespace DeutschJozsaTest
 }
 {% endhighlight %}
 
-```
+{% highlight C# linenos %}
 namespace DeutschJozsaTest {
     open Microsoft.Quantum.Primitive;
     open Microsoft.Quantum.Canon;
@@ -102,7 +102,7 @@ namespace DeutschJozsaTest {
          }
     }
 }
-```
+{% endhighlight %}
 
 #### Értékelés
 - **Előnyök:** Nagyon kényelmes, hogy a szimuláció és a kvantum program leírása elkülönül. Főleg, mert így ha elérhetővé válik a kvantumszámítógép, lehetőség lesz a szimuláció egyszerű eltávolítására. A Q# színtaktikája könnyedén értelmezhető azok számára, akik dolgoztak már C# vagy hasonló nyelvekkel, ami gyorsítja a tanulást. Várhatóan a Microsoft sokáig fejleszteni fogja a nyelvet, mint ahogy teszi azt a C# esetében is, ami napjainkban talán a legmodernebb klasszikus programozási nyelvnek mondható. A Visual Studio használatával nagyon gyors és egyszerű a szimulációk lefuttatása, kényelmesen dolgozhatunk a már megszokott fejlesztőkörnyezetben.
